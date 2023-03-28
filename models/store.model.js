@@ -5,7 +5,7 @@ const { ObjectId } = mongoose.Schema.Types;
 const storeSchema = mongoose.Schema({
     name: {
         type: String,
-        required: [true, "Please provide a valid brand Name"],
+        required: [true, "Please provide a valid store Name"],
         unique: true,
         enum: {
             values: ["dhaka", "rajshahi", "chattogram", "khulna", "barishal", "sylhet", "mymensingh", "rangpur"],
